@@ -1,0 +1,362 @@
+* { box-sizing: border-box; }
+
+.clearfix {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  color: #555;
+}
+
+hr {
+  width: 130px;
+  border: 0;
+  border-bottom: 2px solid #c79852;
+}
+
+.wrapper {
+  width: 55%;
+  margin: 0 auto;
+  clear: both;
+}
+
+@media (max-width: 1300px) {
+  .wrapper {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .wrapper {
+    width: 75%;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    width: 85%;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    width: 95%;
+  }
+}
+
+
+/****************   LOGO AND NAVIGATION   ****************/
+nav {
+  width: 100%;
+  padding: 0 100px;
+}
+
+nav h2 {
+  float: left;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 0 50px 20px;
+  }
+
+  nav h2 {
+    float: none;
+    text-align: center;
+  }
+}
+
+.search {
+  float: right;
+  margin-top: 15px;
+}
+
+.search input {
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+  .search input {
+    width: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .search {
+    display: none;
+  }
+}
+
+.search input:focus {
+  outline: 0;
+  border-bottom: 1px solid #c79852;
+}
+
+
+/****************   HEADER   ****************/
+header {
+  text-align: center;
+}
+
+.profile-img {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 30px;
+  border-radius: 150px;
+}
+
+header h1 {
+  margin-bottom: 70px;
+  font-family: "Droid Serif", "Times New Roman", Times, Baskerville, Georgia, serif;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -3px;
+  color: #242424;
+}
+
+.post-date {
+  margin-bottom: 55px;
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .profile-img {
+    margin-bottom: 5px;
+  }
+
+  header h1 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .post-date {
+    margin-bottom: 20px;
+  }
+}
+
+
+/****************   ARTICLE SECTION   ****************/
+#main-article {
+  margin-top: 60px;
+}
+
+@media (max-width: 800px) {
+  #main-article {
+    margin-top: 30px;
+  }
+}
+
+#main-article p {
+  margin-bottom: 40px;
+  line-height: 1.75;
+}
+
+@media (max-width: 600px) {
+  #main-article p {
+    margin-bottom: 20px;
+  }
+}
+
+.chair-profile {
+/*  display: block;*/
+  margin: 0 auto 50px;
+  max-width: 100%;
+}
+
+@media (max-width: 1300px) {
+  .chair-profile {
+    margin-bottom: 25px;
+  }
+}
+
+blockquote {
+  margin-bottom: 10px;
+  font-family: "Courgette", cursive;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  blockquote { 
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+cite {
+  margin-right: 100px;
+  margin-bottom: 40px;
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: right;
+  font-style: normal;
+}
+
+.chair-gallery {
+  margin-bottom: 40px;
+}
+
+.chair-wrapper {
+  width: 840px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1500px) {
+  .chair-wrapper {
+    width: 100%;
+  }
+
+  .chair-img {
+    width: 100%;
+  }
+
+  .top-right-chair {
+    margin-top: 7px;
+  }
+}
+
+.chair-img {
+  float: left;
+}
+
+.left-chair {
+  margin-right: 8px;
+}
+
+.right-chair {
+  margin-top: 8px;
+}
+
+.chair-gallery ~ p {
+  clear: both;
+}
+
+
+/****************   COMMENTS SECTION   ****************/
+.likes {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.likes p {
+  margin-bottom: 25px;
+}
+
+.fa-heart {
+  color: #E04F4A;
+  padding-right: 5px;
+}
+
+textarea {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  height: 200px;
+  padding: 5px 10px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.buttons {
+  margin: 10px auto;
+  width: 70%;
+}
+
+@media (max-width: 700px) {
+  textarea,
+  .buttons {
+    width: 100%;
+  }
+}
+
+button {
+  padding: 0;
+  border: 0;
+  background-color: #fff;
+  font-family: "PT Sans", sans-serif;
+}
+
+button:hover {
+  color: #c79852;
+  cursor: pointer;
+}
+
+button:not(.button-right) {
+  margin-right: 5px;
+}
+
+.button-right {
+  float: right;
+}
+
+
+/****************   FOOTER   ****************/
+footer {
+  width: 100%;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f8f9fd;
+}
+
+.previous {
+  float: left;
+}
+
+.next {
+  float: right;
+  text-align: right;
+}
+
+.previous p,
+.next p {
+  margin-bottom: 0;
+  font-weight: 400;
+  color: #242424;
+}
+
+@media (max-width: 700px) {
+  .previous p,
+  .next p {
+    display: none;
+  }
+}
+
+.previous a,
+.next a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #242424;
+}
+
+.previous a:hover,
+.next a:hover {
+  color: #c79852;
+}
+
+.previous i,
+.next i {
+  color: #242424;
+}
+
+.previous i {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.next i {
+  display: inline-block;
+  padding-left: 5px;
+}
